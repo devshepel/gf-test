@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" version="1.1">
+ <title>cpu-outline-alerted</title>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path class="clr-i-outline--alerted clr-i-outline-path-1--alerted" d="m12.42,32.19l0.01,-2.2l5.4,0.01l-0.01,2.2a0,0 0 1 0 1.6,0l0.01,-2.2l1.15,0l0,-2l-12.5,-0.03a0,0 0 0 1 -0.1,-0.1l0.05,-19.8a0,0 0 0 1 0.1,-0.1l19.8,0.05a0,0 0 0 1 0.1,0.1l-0.03,12l2,1.15l0,-1.9l2.2,0.01a0,0 0 1 0 0,-1.6l-2.2,-0.01l0.01,-5.4l2.2,0.01a0,0 0 1 0 0,-1.6l-2.2,-0.01l0.01,-2.65a0,0 0 0 0 -2.1,-2.1l-1.45,0l0.01,-2.2a0,0 0 1 0 -1.6,0l-0.01,2.2l-5.4,-0.01l0.01,-2.2a0,0 0 1 0 -1.6,0l-0.01,2.2l-5.4,-0.01l0.01,-2.2a0,0 0 1 0 -1.6,0l-0.01,2.2l-2.75,-0.01a0,0 0 0 0 -2.1,2.1l-0.01,2.65l-2.2,-0.01a0,0 0 1 0 0,1.6l2.2,0.01l-0.01,5.4l-2.2,-0.01a0,0 0 1 0 0,1.6l2.2,0.01l-0.01,5.4l-2.2,-0.01a0,0 0 1 0 0,1.6l2.2,0.01l0,1.55a0,0 0 0 0 2.1,2.1l2.75,0.01l-0.01,2.2a0,0 0 1 0 1.6,0z" fill="#ffffff" id="svg_1"/>
+  <path class="clr-i-outline--alerted clr-i-outline-path-2--alerted" d="m9.38,14.24l-0.11,11.77a-0.01,-0.01 0 0 0 0.74,0.76l8.42,0.08l0.01,-1.5l-7.67,-0.07l0.1,-11l-1.5,-0.03z" fill="#ffffff" id="svg_2" transform="matrix(1 0 0 1 0 0)"/>
+  <path class="clr-i-outline--alerted clr-i-outline-path-3--alerted clr-i-alert" d="m27.13,23.43l-5.72,9.86a1.28,1.28 0 0 0 1.1,2l11.45,0a1.28,1.28 0 0 0 1.1,-2l-5.72,-9.86a1.28,1.28 0 0 0 -2.21,0z" fill="#ff0000" id="svg_3" transform="rotate(180 28.2311 29.0446)"/>
+  <rect fill-opacity="0" height="36" id="svg_4" transform="matrix(1 0 0 1 0 0)" width="36" x="-38.85" y="0.9"/>
+ </g>
+</svg>
