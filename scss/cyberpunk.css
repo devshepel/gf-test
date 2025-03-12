@@ -235,9 +235,9 @@ body
     mask-repeat: repeat-x;
     mask-position: bottom;
     position: absolute;
-    left: 0;
+    left: -50px;
     bottom: -30px;
-    width: 100%;
+    width: 700px;
     height: 30px;
     z-index: 1;
 }

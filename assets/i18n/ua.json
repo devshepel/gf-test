@@ -1,0 +1,441 @@
+{
+  "SKILL_TYPES": {
+    "RESOURCES_EXTRACTION": "Видобуток ресурсів",
+    "STORAGE": "Сховища",
+    "PROCESSOR": "Процесори",
+    "CIRCUIT_BOARD": "Друкована плата",
+    "SKILLS": "Навички",
+    "PRODUCING": "Виробництво",
+    "COMPUTING_UNIT": "Обчислювальний блок"
+  },
+  "RESOURCE_ITEM_NAMES": {
+    "Deuterium": "Дейтерій",
+    "Energy": "Енергія",
+    "Nanite liquid": "Нанітна рідина",
+    "Metal": "Метал",
+    "Technetium": "Технецій",
+    "Hashes": "Хеші",
+    "Gracium": "Граціум",
+    "Manipulator": "Маніпулятор",
+    "Extractor": "Екстрактор",
+    "Repair fluid": "Ремонтна рідина"
+  },
+  "ITEMS_TO_PRODUCE": {
+    "MANIPULATOR": {
+      "DESCRIPTION": "Використовується для переміщення процесорів на платі. (Вартість переміщення = Рівень процесора * 10 + 10)"
+    },
+    "GRACIUM": {
+      "DESCRIPTION": "Основний матеріал. Використовується на всіх етапах гри як валюта та слугує доказом роботи тераедрона."
+    },
+    "EXTRACTOR": {
+      "DESCRIPTION": "Використовується для переміщення процесорів до сховища процесорів, де їх можна оновити або відремонтувати. (Вартість екстракції = Рівень процесора * 10 + 10)"
+    }
+  },
+  "AddProductionItemsComponent": {
+    "PRODUCTION": "Виробництво",
+    "ALL_ITEMS": "Усі предмети",
+    "NEEDED_TIME": "Потрібний час:",
+    "NEEDED_RESOURCES": "Потрібні ресурси:",
+    "PRODUCE": "Виробити",
+    "ALERT_HEADER_ADDED_TO_QUEUE": "Додано до черги виробництва:",
+    "DOM_NOT_FOUND": "не знайдено в DOM"
+  },
+  "AllItemsComponent": {
+    "ALL_ITEMS": "Усі предмети",
+    "RESOURCES": "Ресурси",
+    "COIN": "(монета)",
+    "ITEMS": "Предмети",
+    "PRIME_MATERIAL_DESCRIPTION": "Основний матеріал. Використовується на всіх етапах гри як валюта та слугує доказом роботи тераедрона.",
+    "MANIPULATOR": "Маніпулятор",
+    "MANIPULATOR_DETAILS": "Використовується для переміщення процесорів на платі. (Вартість переміщення = Рівень процесора * 10 + 10)",
+    "EXTRACTOR": "Екстрактор",
+    "EXTRACTOR_DETAILS": "Використовується для переміщення процесорів до сховища процесорів, де їх можна оновити або відремонтувати. (Вартість екстракції = Рівень процесора * 10 + 10)"
+  },
+  "BoardControlButtonsComponent": {
+    "PROCESSOR_STORAGE": "Сховище процесорів",
+    "MOVE_PROCESSORS": "Перемістити процесори",
+    "ALL_ITEMS": "Усі предмети",
+    "STATS": "Статистика (TBD)",
+    "INSTALLING": "Встановлення",
+    "PROCESSOR": "процесор",
+    "CANCEL": "Скасувати",
+    "SELECT_PROCESSOR_TO_MOVE": "Виберіть процесор для переміщення",
+    "MANIPULATORS_OWNED": "Наявні маніпулятори:",
+    "SELECT_POSITION_TO_MOVE_PROCESSOR": "Виберіть позицію для переміщення процесора",
+    "COST": "Вартість:"
+  },
+  "CircuitBoardComponent": {
+    "NOT_ENOUGH_MANIPULATORS": "Недостатньо маніпуляторів",
+    "OVERHEATING": "Перегрів:",
+    "UNLOCK_ROW_FULL": "Відкрити ряд ",
+    "MOVE_ALERT_MESSAGE": "<h6>У вас є: <span class=\"gf-negative-color\">{{manipulatorValue}}</span> <img class=\"resource-img\" src=\"{{manipulatorImage}}\"> (Маніпулятор) </br> Вартість переміщення* = Рівень процесора * 10 + 10 = {{movePrice}} <br> *Деякі навички та здібності процесора можуть впливати на вартість переміщення.</h6>"
+  },
+  "ComputingUnitComponent": {
+    "ALERT_REWARD_HEADER": "Відмінна робота.",
+    "ALERT_REWARD_MESSAGE": "<h5>Ваша нагорода {{reward}} <img class=\"resource-img\" src=\"{{hashesImage}}\">(хеші)</h5></br><h3>Давайте дізнаємося про друковану плату.</h3>",
+    "OBTAIN_HASHES": "Отримати хеші: {{currentHashes}}/1000",
+    "TITLE": "Обчислювальний блок",
+    "COMPUTING_POWER_PER_CLICK": "Обчислювальна потужність за клік*:",
+    "COMPUTING_POWER_RESETTING": "Скидання обчислювальної потужності*:",
+    "UPGRADE_NOTE": "(*) - може бути покращено у центрі навичок"
+  },
+  "FooterMenuComponent": {
+    "MENU": {
+      "CIRCUIT_BOARD": "Друкована плата",
+      "COMPUTING_UNIT": "Обчислювальний блок",
+      "PRODUCING_SUBSYSTEM": "Підсистема виробництва",
+      "SKILLS_CENTER": "Центр навичок",
+      "SOUND": "ЗВУК: ",
+      "OFF": "ВИМК.",
+      "ON": "УВІМК.",
+      "EXCHANGE": "Обмін",
+      "MOTHER": "#m0tHEr",
+      "LORE": "Лор",
+      "HELP_CENTER": "Центр допомоги",
+      "ABOUT": "Про гру"
+    }
+  },
+  "LoadingScreenComponent": {
+    "BUTTONS": {
+      "START": "Почати",
+      "PLAY": "Грати",
+      "CONTINUE": "Продовжити"
+    },
+    "LOADING": "Завантаження ",
+    "STORY": "Викиди від технецієвих надпровідників, що використовуються у квантових комп'ютерах, повністю знищили атмосферу, перетворивши більшість води на дейтерій.<br><br>Остання надія на відновлення життя — мільйони тераедронів, пристроїв, що складаються з автономних модулів, контрольованих групою ШІ і працюючих за протоколом Граціум.<br><br>Ви — штучний інтелект, відповідальний за керування модулями терраформування та мережевого зв'язку тераедрона.<br><br><b>Ваше головне завдання — виробництво Граціуму як доказ терраформування.</b>"
+  },
+  "ModalsHeaderComponent": {
+    "CLOSE": "Закрити"
+  },
+  "ProcessorStorageComponent": {
+    "HEADER": {
+      "TITLE": "Сховище процесорів"
+    },
+    "SEGMENT_LABELS": {
+      "DEUTERIUM": "Дейтерій",
+      "ENERGY": "Енергія",
+      "NANITE_LIQUID": "Нанітна рідина",
+      "METAL": "Метал",
+      "TECHNETIUM": "Технецій",
+      "COMPUTING": "Хеші",
+      "REPAIRING": "Ремонт",
+      "ANTI_CORROSION": "Антикорозійний",
+      "BUFFER": "Буфер",
+      "COMMAND": "Командний"
+    },
+    "SELECTED_CATEGORY": {
+      "Deuterium": "Дейтерій",
+      "Energy": "Енергія",
+      "Nanite liquid": "Нанітна рідина",
+      "Metal": "Метал",
+      "Technetium": "Технецій",
+      "Hashes": "Хеші",
+      "Repairing": "Ремонт",
+      "Anti corrosion": "Антикорозійний",
+      "Buffer": "Буфер",
+      "Command": "Командний"
+    },
+    "PROCESSOR_SOURCE": "Процесори",
+    "ALERT": {
+      "OUT_OF_CONTROL_HEADER": "Процесор вийшов з-під контролю.",
+      "OUT_OF_CONTROL_MESSAGE": "Ви спробували вибрати процесор, який не під вашим контролем, збільшіть ліміт сховища процесорів (НАВИЧКИ > категорія ПРОЦЕСОРИ) або спочатку встановіть доступні процесори."
+    },
+    "BUTTONS": {
+      "ALL_ITEMS": "Усі предмети",
+      "ADD": "Додати"
+    }
+  },
+  "ProcessorViewComponent": {
+    "HEADER": {
+      "DEFAULT_TITLE": "Слот процесора",
+      "ROW": "ряд:",
+      "COLUMN": "колонка:"
+    },
+    "ALERT_MESSAGES": {
+      "HELP_ICONS_HEADER": "Підказки",
+      "HELP_ICONS_MESSAGE": "<h2><b>Ви можете прочитати додаткову інформацію, натиснувши на іконку інформації </b><img class=\"resource-img\" src=\"{{infoIconUrl}}\"><br></h2>",
+      "DEPLETION_HEADER": "Витрата",
+      "DEPLETION_MESSAGE": "<h2>Витрата = Рівень процесора * 3 + 3 (за один робочий цикл 10 сек)</h2><br><h2>*Деякі навички та здібності процесора можуть впливати на витрату.</h2>",
+      "DURABILITY_HEADER": "Міцність",
+      "DURABILITY_MESSAGE": "<h2>Процесори зношуються під час роботи, і якщо їх міцність досягне 0, процесор буде знищено.<br>Процесори можна ремонтувати за допомогою ремонтних процесорів на платі або хешів у сховищі процесорів.</h2><h2>Максимальна міцність процесора = Рівень процесора * 200 + 1000</h2><br><h2>*Деякі навички та здібності процесора можуть впливати на максимальну міцність.</h2>",
+      "WORKING_CYCLE_HEADER": "Робочий цикл",
+      "WORKING_CYCLE_MESSAGE": "<h2>Процесор видобуває ресурси кожні <b>10 секунд (1 цикл)</b>.<br>Загальний час роботи цього процесора {totalTime} секунд ({cycles} циклів).<br><b>*Деякі здібності процесора можуть впливати на вартість переміщення.</b></h2>",
+      "MOVE_COST_HEADER": "Вартість переміщення",
+      "MOVE_COST_MESSAGE": "<h2>Поточна вартість переміщення процесора <b>{{price}} <img class=\"resource-img\" src=\"{{manipulatorUrl}}\"> (Маніпулятор)</b>.<br><br>Вартість переміщення процесора = Рівень процесора * 10 + 10<br><br><b>*Деякі навички та здібності процесора можуть впливати на вартість переміщення.</b></h2>",
+      "EXTRACTION_COST_HEADER": "Вартість екстракції",
+      "EXTRACTION_COST_MESSAGE": "<h2>Поточна вартість екстракції процесора <b>{{price}} <img class=\"resource-img\" src=\"{{extractorUrl}}\"> (Екстрактор)</b>.<br><br>Вартість екстракції процесора = Рівень процесора * 10 + 10<br><br><b>*Деякі навички та здібності процесора можуть впливати на вартість екстракції.</b></h2>",
+      "POSITIVE_ABILITIES_HEADER": "Позитивні здібності",
+      "POSITIVE_ABILITIES_MESSAGE": "<h5>Процесор отримуватиме 1 позитивну здібність на кожному рівні.</h5><br><h2>Можливі здібності: <b>Звичайна, Інтелектуальна, Високотехнологічна, Зоряна</b>.</h2>",
+      "NEGATIVE_ABILITIES_HEADER": "Негативні здібності",
+      "NEGATIVE_ABILITIES_MESSAGE": "<h2><b>Процесор отримає 1 негативну здібність на рівнях 1, 3, 5.</b></h2>"
+    },
+    "BUTTONS": {
+      "INSTALL": "Встановити",
+      "DESTROY": "Знищити",
+      "REPAIR": "Ремонтувати",
+      "EXTRACT": "Екстрагувати",
+      "UPGRADE": "Підвищити рівень",
+      "CHANGE": "Змінити ",
+      "EMPTY_SLOT": "Порожній слот:"
+    },
+    "LABELS": {
+      "BEING_WORKING": "Процесор зараз працює і не може бути екстрагований.",
+      "MOVE_COST": "Вартість переміщення:",
+      "EXTRACTION_COST": "Вартість екстракції:",
+      "DURABILITY": "Міцність:",
+      "DEPLETION_PER_CYCLE": "Витрата за цикл:",
+      "LVL": "Рівень:",
+      "CYCLE_BASE": "база циклу:",
+      "CURRENT_PRODUCING": "Поточне виробництво за цикл (10 сек):",
+      "HASHES": "Хеші",
+      "EMPTY_SLOT_DESCRIPTION": "тут можна встановити ваші процесори зі сховища процесорів.",
+      "ABILITIES": "Здібності:",
+      "POSITIVE": "Позитивні:",
+      "NEGATIVE": "Негативні:",
+      "WEATHER": "Погода:",
+      "SKILLS": "Навички:",
+      "MANIPULATORS": "Маніпулятори",
+      "EXTRACTORS": "Екстрактори",
+       "EXTRACT_MESSAGE": "Вам потрібно витягти процесор до сховища процесорів, щоб його можна було оновити або відремонтувати (використовуючи хеші)."
+    },
+    "DESCRIPTIONS": {
+      "DEUTERIUM": "Процесор для дейтерію виробляє дейтерій і витрачає хеші.",
+      "ENERGY": "Процесор для енергії виробляє енергію і витрачає хеші.",
+      "NANITE": "Процесор для нанітної рідини виробляє нанітну рідину та споживає дейтерій і хеші.",
+      "METAL": "Процесор для металу виробляє метал та споживає дейтерій і хеші.",
+      "TECHNETIUM": "Процесор для технецію виробляє технецій та споживає нанітну рідину і метал."
+    }
+  },
+  "ProducingQueueComponent": {
+    "HEADER": {
+      "SUBSYSTEM": "Підсистема виробництва"
+    },
+    "BUTTONS": {
+      "CREATE": "Створити"
+    },
+    "LABELS": {
+      "TOTAL_TIME": "Загальний час:"
+    },
+    "TABLE": {
+      "DESCRIPTION": "Опис",
+      "TIME": "Час"
+    }
+  },
+  "SkillsLearningComponent": {
+    "HEADER": {
+      "TITLE": "Центр навичок"
+    },
+    "BUTTONS": {
+      "ADD_SKILL": "Додати навичку"
+    },
+    "LABELS": {
+      "LEARNING_SKILLS": "Вивчаються навички:"
+    },
+    "TABLE": {
+      "DESCRIPTION": "Опис",
+      "TIME": "Час"
+    }
+  },
+  "SkillsListComponent": {
+    "HEADER": {
+      "ALL_SKILLS": "Всі навички"
+    },
+    "BUTTONS": {
+      "BACK": "Назад",
+      "ADD_TO_QUEUE": "Додати до черги"
+    },
+    "LABELS": {
+      "SKILLS": "навички",
+      "LEVEL": "Рівень",
+      "COST": "Вартість:",
+      "LEARNING_TIME": "Час вивчення:"
+    },
+    "MESSAGES": {
+      "LEARNING_SKILL_LIST_FULL": "Список навичок, що вивчаються, заповнений",
+      "SKILL_COMPLETELY_LEARNED": "Навичку повністю вивчено.",
+      "SKILL_CURRENTLY_LEARNED": "Навичка зараз в процесі вивчення."
+    },
+    "TECHNOLOGY_RANK": "Рівень технологій:"
+  },
+  "ManageStates": {
+    "QUEST_1_HEADER": "Вивчення [1/6]",
+    "QUEST_1_HTML": "<h2>Хеші — найпоширеніший ресурс, необхідний для отримання інших ресурсів.</h2><br><h3>Давайте обчислимо кілька хешів!</h3><h3>Отримайте 1000<img class=\"resource-img\" src=\"{{hashesImage}}\">(хешів), швидко натискаючи на хеші</h3><br><img src=\"{{computingUnitSample}}\">",
+    "QUEST_2_HEADER": "Вивчення [2/6]",
+    "QUEST_2_HTML": "<h2><b>Створімо ваш перший процесор</b><br>1) Відкрийте сховище процесорів.<br>2) Додайте процесор для дейтерію.<br>3) Встановіть процесор у перший слот.</h2>",
+    "QUEST_3_HEADER": "Відмінно!",
+    "QUEST_3_HTML": "<h2>Перевіримо процесор для енергії:<br>1) Натисніть на процесор для енергії (посередині), щоб переглянути додаткову інформацію.</h2>",
+    "QUEST_4_HEADER": "Вивчення [3/6]",
+    "QUEST_4_HTML": "<h2><b>Переміщення процесора</b><br><br>Щоб уникнути знищення вашого процесора для дейтерію, перемістіть створений процесор для дейтерію:<br>1) Натисніть на іконку переміщення процесора.<br>2) Виберіть процесор для дейтерію.<br>3) Перемістіть процесор для дейтерію до правого слоту</h2>",
+    "QUEST_5_HEADER": "Вивчення [4/6]",
+    "QUEST_5_HTML": "<h2><b>Відмінно, отримайте вашу нагороду 10 <span class=\"gracium-currency\">G</span> (Граціум)</b><br><br><b>Давайте освоїмо вашу першу навичку</b><br>1) Проведіть вліво до Центру навичок<br>2) Натисніть «Додати навичку».<br>3) Виберіть категорію «Видобуток ресурсів».<br>4) Додайте навичку продуктивності для дейтерію до черги.</h2>",
+    "QUEST_6_HEADER": "Вивчення [5/6]",
+    "QUEST_6_HTML": "<h2><b>Створимо ваші перші предмети!</b><br>1) Проведіть вліво до підсистеми виробництва.<br>2) Натисніть «Створити».<br>3) Виберіть Граціум та створіть 10 предметів</h2>",
+    "QUEST_7_HEADER": "Вивчення [6/6]",
+    "QUEST_7_HTML": "<h2><b>Відкрийте новий ряд на друкованій платі.</b><br><br>1) Перейдіть до друкованої плати<br>2) Відкрийте новий ряд друкованої плати.</h2>",
+    "QUEST_8_HEADER": "Доказ роботи тераедрона",
+    "QUEST_8_HTML": "<h2>Вивчення завершено!<br>Створіть усі типи процесорів: для енергії, нанітної рідини, металу, технецію.<br><br><b>Щоб завершити Фазу 1 і розпочати мережеву співпрацю з іншими тераедронами — виробляйте Граціум і відкривайте всі ряди друкованої плати.</b></h2>",
+    "PLAYING_HEADER": "Доказ роботи тераедрона",
+    "PLAYING_HTML": "<h2>Вивчення завершено!<br>Створіть усі типи процесорів: для енергії, нанітної рідини, металу, технецію.<br><br><b>Щоб завершити Фазу 1 і розпочати мережеву співпрацю з іншими тераедронами — виробляйте Граціум і відкривайте всі ряди друкованої плати.</b></h2>"
+  },
+  "TourFunctions": {
+    "INFO_ABOUT_ABILITIES": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h6>Ви зможете побачити, що виробляє ваш процесор під час роботи.<br><h1 class=\"tooltip-button-ok show-proc-ability-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></h6></div></div>",
+    "INFO_ABOUT_HEATING": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h3><b>Ваш процесор для дейтерію знаходиться в небезпечному слоті перегріву, <span class=\"gf-negative-color\">коли таймер перегріву закінчиться, процесор на цій позиції буде знищено.</span><br>Отже, давайте перемістимо процесор.</b><br></h3><h1 class=\"tooltip-button-ok show-proc-ability-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "WEATHER_TIP": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h6><b>Погода за межами тераедрона змінюється кожні кілька днів.</b></h6><h6>Поточна погода за межами тераедрона: <b>Шторм.</b> Процесори для дейтерію отримуватимуть на 50% більше ресурсів, а процесори для нанітної рідини та металу — на 25% менше.</h6><br><br><h1 class=\"tooltip-button-ok show-quest-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "QUEST_POPUP": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h3><b>Ви завжди можете натиснути на іконку завдання <img style=\"width: 2rem; vertical-align: middle;\" class=\"tooltip-image\" src=\"{{tasksIconUrl}}\">, щоб побачити, що вам потрібно зробити.</b></h3><br><h1 class=\"tooltip-button-ok show-quest-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "MAIN_BOARD_DESCRIBE_3": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><div class=\"image-wrap\"><img class=\"tooltip-image\" src=\"{{headMovingSampleUrl}}\"></div><div><h4><b>Читаюча голова переміщується зліва направо та ряд за рядом, працюючи 10 секунд у кожному слоті для видобутку ресурсів.</b><br><br></h4></div><div><h1 class=\"tooltip-button-ok show-board-tooltip-3 cyber-tile-small bg-blue fg-white\">OK</h1></div></div></div>",
+    "MAIN_BOARD_DESCRIBE_2": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h6>Порожні слоти також працюють 10 секунд і приносять 10 хешів за цикл, а їх кількість збільшується при відкритті нових рядів. <b>Ви можете встановлювати ваші процесори у порожні слоти.</b></h6><br><h1 class=\"tooltip-button-ok show-board-tooltip-3 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "MAIN_BOARD_DESCRIBE_1": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><div class=\"image-wrap\"><img class=\"tooltip-image\" src=\"{{procSampleUrl}}\"></div><h6><b>Ресурси видобуваються за допомогою процесорів на друкованій платі.</b><br><br>1. Міцність процесора.<br>2. Кожен процесор працює 10 секунд (коли читаюча голова знаходиться над цим процесором).<br>3. Що процесор споживає та виробляє.</h6><br><h1 class=\"tooltip-button-ok show-board-tooltip-1 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "SHOW_RESOURCE_TIP_2": "<div class=\"tooltip-wrapper\"><div class=\"tooltip-text fg-white\"><div class=\"image-wrap\"><img class=\"tooltip-image\" src=\"{{resourceSampleUrl}}\"></div><h4><b>1. Кількість ресурсів, які у вас є.</b><br><b>2. Максимальна місткість сховища ресурсів.</b><br><br><br><br><br></h4><h1 class=\"tooltip-button-ok show-resource-tooltip-1 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "SHOW_RESOURCE_TIP_1": "<div class=\"tooltip-wrapper\"><div class=\"tooltip-text fg-white\"><h2>Є 6 основних типів ресурсів: Хеші, Дейтерій, Енергія, Нанітна рідина, Метал, Технецій, які можна видобувати за допомогою процесорів на центральній платі.</h2><h1 class=\"tooltip-button-ok show-resource-tooltip-1 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>"
+  },
+  "InactiveHandles": {
+    "ALERT_HEADER": "Неактивний",
+    "ALERT_MESSAGE": "<h2>Ви неактивні більше 2 хвилин, натисніть OKAY для продовження</h2>"
+  },
+  "AlertConfirmService": {
+    "OKAY": "ОК",
+    "CANCEL": "Скасувати",
+    "CONFIRM": "Підтвердити"
+  },
+  "GameProcessService": {
+    "UNLOCK_NEW_ROW_HEADER": "Відкрити новий ряд",
+    "UNLOCK_NEW_ROW_DESCRIPTION": "Відкрити новий ряд за ",
+    "TOAST_SKILL_UPGRADED": "Навичку {{skillName}} підвищено до рівня {{newLvl}}",
+    "TOAST_NOT_ENOUGH_RESOURCES_PROCESSOR": "Недостатньо ресурсів для процесора на позиції ряд: {{row}}, колонка: {{col}}",
+    "TOAST_PRODUCING_FINISHED": "Виробництво {{item}} x {{count}} завершено",
+    "CREATE_PROCESSOR_NOT_ENOUGH_RESOURCES_HEADER": "Недостатньо ресурсів.",
+    "CREATE_PROCESSOR_NOT_ENOUGH_RESOURCES_MESSAGE": "<h6>У вас є: <span class=\"gf-negative-color\">{{available}}</span><img class=\"resource-img\" src=\"{{resourceImage}}\"> <br/> Потрібно: {{need}}<img class=\"resource-img\" src=\"{{resourceImage}}\"></h6>"
+  },
+  "SKILLS": {
+    "CIRCUIT_BOARD": {
+      "OVERHEATING_TIMER_DEFERMENT": {
+        "NAME": "Відстрочка таймера перегріву",
+        "DESCRIPTION": "Збільшує значення таймера перегріву на {{baseTime}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    },
+    "COMPUTING_UNIT": {
+      "INCREASE_RESETING_TIMER": {
+        "NAME": "Збільшення значення таймера скидання",
+        "DESCRIPTION": "Збільшує час роботи таймера для обчислювального блоку на {{timerIncrease}} секунд за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}} секунд</span>."
+      },
+      "INCREASE_INITIAL_POWER": {
+        "NAME": "Збільшення початкової потужності обчислювального блоку",
+        "DESCRIPTION": "Збільшує початкове значення обчислювальної потужності на {{resetingValueIncrease}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    },
+    "EXTRACTION": {
+      "DEUTERIUM_PRODUCTIVITY": {
+        "NAME": "Продуктивність дейтерієвих процесорів",
+        "DESCRIPTION": "Процесори для дейтерію видобувають на 10% більше за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "ENERGY_PRODUCTIVITY": {
+        "NAME": "Продуктивність для енергії",
+        "DESCRIPTION": "Процесори для енергії видобувають на 10% більше за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "HASHES_PRODUCTIVITY": {
+        "NAME": "Продуктивність хешів",
+        "DESCRIPTION": "Процесори для хешів видобувають на 10% більше за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "NANITE_LIQUID_PRODUCTIVITY": {
+        "NAME": "Продуктивність для нанітної рідини",
+        "DESCRIPTION": "Процесори для нанітної рідини видобувають на 10% більше за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "METAL_PRODUCTIVITY": {
+        "NAME": "Продуктивність для металу",
+        "DESCRIPTION": "Процесори для металу видобувають на 10% більше за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "TECHNETIUM_PRODUCTIVITY": {
+        "NAME": "Продуктивність для технецію",
+        "DESCRIPTION": "Процесори для технецію видобувають на 10% більше за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      }
+    },
+    "PROCESSORS": {
+      "DEUTERIUM_STORAGE_LIMIT": {
+        "NAME": "Ліміт сховища для процесорів дейтерію",
+        "DESCRIPTION": "Збільшує сховище для процесорів для дейтерію на {{increasePerLevel}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "ENERGY_STORAGE_LIMIT": {
+        "NAME": "Ліміт сховища для процесорів енергії",
+        "DESCRIPTION": "Збільшує сховище для процесорів для енергії на {{increasePerLevel}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "NANITE_STORAGE_LIMIT": {
+        "NAME": "Ліміт сховища для процесорів нанітної рідини",
+        "DESCRIPTION": "Збільшує сховище для процесорів для нанітної рідини на {{increasePerLevel}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "METAL_STORAGE_LIMIT": {
+        "NAME": "Ліміт сховища для процесорів металу",
+        "DESCRIPTION": "Збільшує сховище для процесорів для металу на {{increasePerLevel}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "TECHNETIUM_STORAGE_LIMIT": {
+        "NAME": "Ліміт сховища для процесорів технецію",
+        "DESCRIPTION": "Збільшує сховище для процесорів для технецію на {{increasePerLevel}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    },
+    "PRODUCING": {
+      "QUEUE_TIME": {
+        "NAME": "Час черги виробництва",
+        "DESCRIPTION": "Збільшує загальний час черги виробництва на {{increaseSeconds}} секунд. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}} секунд</span>."
+      },
+      "EXTRACTOR_TIME_DECREASE": {
+        "NAME": "Зменшення часу екстракції",
+        "DESCRIPTION": "Зменшує час виробництва екстрактора на {{decreaseSeconds}} секунд за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">-{{currentDecrease}} секунд</span>."
+      },
+      "MANIPULATOR_TIME_DECREASE": {
+        "NAME": "Зменшення часу маніпулятора",
+        "DESCRIPTION": "Зменшує час виробництва маніпулятора на {{decreaseSeconds}} секунд за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">-{{currentDecrease}} секунд</span>."
+      },
+      "GRACIUM_TIME_DECREASE": {
+        "NAME": "Зменшення часу виробництва Граціуму",
+        "DESCRIPTION": "Зменшує час виробництва Граціуму на {{decreaseSeconds}} секунд за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">-{{currentDecrease}} секунд</span>."
+      },
+      "REPAIR_FLUID_TIME_DECREASE": {
+        "NAME": "Зменшення часу виробництва ремонтної рідини",
+        "DESCRIPTION": "Зменшує час виробництва ремонтної рідини на {{decreaseSeconds}} секунд за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">-{{currentDecrease}} секунд</span>."
+      }
+    },
+    "SKILLS": {
+      "SIMMALTENIOUS_LEARNING": {
+        "NAME": "Одночасне навчання",
+        "DESCRIPTION": "Збільшує кількість навичок, що вивчаються одночасно, на 1 за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "LEARNING_TIME_OPTIMIZATION": {
+        "NAME": "Оптимізація часу навчання",
+        "DESCRIPTION": "Зменшує час навчання навичок на 5% за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">-{{currentDecrease}}%</span>."
+      }
+    },
+    "STORAGE": {
+      "HASHES_STORAGE": {
+        "NAME": "Сховище хешів",
+        "DESCRIPTION": "Збільшує сховище хешів на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "DEUTERIUM_STORAGE": {
+        "NAME": "Сховище для дейтерію",
+        "DESCRIPTION": "Збільшує сховище для дейтерію на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "ENERGY_STORAGE": {
+        "NAME": "Сховище для енергії",
+        "DESCRIPTION": "Збільшує сховище для енергії на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "NANITE_LIQUID_STORAGE": {
+        "NAME": "Сховище для нанітної рідини",
+        "DESCRIPTION": "Збільшує сховище для нанітної рідини на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "METAL_STORAGE": {
+        "NAME": "Сховище для металу",
+        "DESCRIPTION": "Збільшує сховище для металу на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "TECHNETIUM_STORAGE": {
+        "NAME": "Сховище для технецію",
+        "DESCRIPTION": "Збільшує сховище для технецію на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "MANIPULATORS_STORAGE": {
+        "NAME": "Сховище для маніпуляторів",
+        "DESCRIPTION": "Збільшує сховище для маніпуляторів на {{updateValue}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "EXTRACTOR_STORAGE": {
+        "NAME": "Сховище для екстракторів",
+        "DESCRIPTION": "Збільшує сховище для екстракторів на {{updateValue}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    }
+  }
+}

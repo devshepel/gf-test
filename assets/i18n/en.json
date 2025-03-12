@@ -1,0 +1,443 @@
+{
+  "SKILL_TYPES": {
+    "RESOURCES_EXTRACTION":"Resource extraction",
+    "STORAGE": "Storages",
+    "PROCESSOR": "Processors",
+    "CIRCUIT_BOARD": "Circuit board",
+    "SKILLS": "Skills",
+    "PRODUCING": "Producing",
+    "COMPUTING_UNIT": "Computing unit"
+  },
+  "RESOURCE_ITEM_NAMES": {
+     "Deuterium": "Deuterium",
+    "Energy": "Energy",
+    "Nanite liquid": "Nanite liquid",
+    "Metal": "Metal",
+    "Technetium": "Technetium",
+    "Hashes": "Hashes",
+    "Gracium": "Gracium",
+    "Manipulator":  "Manipulator",
+    "Extractor": "Extractor",
+    "Repair fluid": "Repair fluid" 
+  },
+  "ITEMS_TO_PRODUCE": {
+    "MANIPULATOR": {
+      "DESCRIPTION": "Used for moving processors on circuit board. (Move price = Processor LVL*10 + 10)"
+    },
+    "GRACIUM": {
+      "DESCRIPTION": "Prime Material. Used in all phases of the game as currency and serves as proof of terrahedron work."
+    },
+    "EXTRACTOR": {
+      "DESCRIPTION": "Used for extraction processors to processor storage where they can be upgraded or repaired. (Extraction price = Processor LVL * 10 + 10)"
+    }
+  },
+  "AddProductionItemsComponent": {
+    "PRODUCTION": "Production",
+    "ALL_ITEMS": "All items",
+    "NEEDED_TIME": "Needed time:",
+    "NEEDED_RESOURCES": "Needed resources:",
+    "PRODUCE": "Produce",
+    "ALERT_HEADER_ADDED_TO_QUEUE": "Added to production queue:",
+    "DOM_NOT_FOUND": "not found in dom"
+  },
+  "AllItemsComponent": {
+    "ALL_ITEMS": "All items",
+    "RESOURCES": "Resources",
+    "COIN": "(coin)",
+    "ITEMS": "Items",
+    "PRIME_MATERIAL_DESCRIPTION": "Prime Material. Used in all phases of the game as currency and serves as proof of terrahedron work.",
+    "MANIPULATOR": "Manipulator",
+    "MANIPULATOR_DETAILS": "Used for moving processors on circuit board. (Move price = Processor LVL*10 + 10)",
+    "EXTRACTOR": "Extractor",
+    "EXTRACTOR_DETAILS": "Used for extraction processors to processor storage where they can be upgraded or repaired. (Extraction price = Processor LVL * 10 + 10)"
+  },
+  "BoardControlButtonsComponent": {
+    "PROCESSOR_STORAGE": "Processor storage",
+    "MOVE_PROCESSORS": "Move processors",
+    "ALL_ITEMS": "All items",
+    "STATS": "Stats (TBD)",
+    "INSTALLING": "Installing",
+    "PROCESSOR": "processor",
+    "CANCEL": "Cancel",
+    "SELECT_PROCESSOR_TO_MOVE": "Select processor to move",
+    "MANIPULATORS_OWNED": "Manipulators owned:",
+    "SELECT_POSITION_TO_MOVE_PROCESSOR": "Select position where to move processor",
+    "COST": "Cost:"
+  },
+  "CircuitBoardComponent": {
+    "NOT_ENOUGH_MANIPULATORS": "Not enough manipulators",
+    "OVERHEATING": "Overheating:",
+    "UNLOCK_ROW_FULL": "Unlock row ",
+    "MOVE_ALERT_MESSAGE": "<h6>You have: <span class=\"gf-negative-color\">{{manipulatorValue}}</span> <img class=\"resource-img\" src=\"{{manipulatorImage}}\"> (Manipulator) </br> Move price* = Processor LVL*10 + 10 = {{movePrice}} <br> *Some skills and processor abilities may influence move cost.</h6>"
+  },
+  "ComputingUnitComponent": {
+    "ALERT_REWARD_HEADER": "Great job.",
+    "ALERT_REWARD_MESSAGE": "<h5>Your reward {{reward}} <img class=\"resource-img\" src=\"{{hashesImage}}\">(hashes)</h5></br><h3>Let's find out about circuit board.</h3>",
+    "OBTAIN_HASHES": "Obtain hashes: {{currentHashes}}/1000",
+    "TITLE": "Computing unit",
+    "COMPUTING_POWER_PER_CLICK": "Computing power per click*:",
+    "COMPUTING_POWER_RESETTING": "Computing power reseting*:",
+    "UPGRADE_NOTE": "(*) - can be upgraded in skill center"
+  },
+  "FooterMenuComponent": {
+    "MENU": {
+      "CIRCUIT_BOARD": "Circuit board",
+      "COMPUTING_UNIT": "Computing unit",
+      "PRODUCING_SUBSYSTEM": "Producing subsystem",
+      "SKILLS_CENTER": "Skills center",
+      "SOUND": "SOUND: ",
+      "OFF": "OFF",
+      "ON": "ON",
+      "EXCHANGE": "Exchange",
+      "MOTHER": "#m0tHEr",
+      "LORE": "Lore",
+      "HELP_CENTER": "Help center",
+      "ABOUT": "About"
+    }
+  },
+  "LoadingScreenComponent": {
+    "BUTTONS": {
+      "START": "Start",
+      "PLAY": "Play",
+      "CONTINUE": "Continue"
+    },
+    "LOADING": "Loading ",
+    "STORY": "Emissions from the technetium superconductors used in quantum computers have completely destroyed the atmosphere, turning the vast majority of water into deuterium.<br><br>The last hope to revive life is millions of terrahedrons, devices made up of autonomous modules controlled by group of AI's and operating on the Gracium protocol.<br><br>You are an artificial intelligence that is responsible for controlling a terrahedron's terraforming and networking module.<br><br><b>Your main goal is production of Gracium as a proof of terraforming.</b>"
+  },
+  "ModalsHeaderComponent": {
+    "CLOSE": "Close"
+  },
+  "ProcessorStorageComponent": {
+    "HEADER": { 
+      "TITLE": "Processor storage"
+    },
+    "SEGMENT_LABELS": {
+      "DEUTERIUM": "Deuterium",
+      "ENERGY": "Energy",
+      "NANITE_LIQUID": "Nanite liquid",
+      "METAL": "Metal",
+      "TECHNETIUM": "Technetium",
+      "COMPUTING": "Hashes",
+      "REPAIRING": "Repairing",
+      "ANTI_CORROSION": "Anti corrosion",
+      "BUFFER": "Buffer",
+      "COMMAND": "Command"
+    },
+    "SELECTED_CATEGORY": {
+      "Deuterium": "Deuterium",
+      "Energy": "Energy",
+      "Nanite liquid": "Nanite liquid",
+      "Metal": "Metal",
+      "Technetium": "Technetium",
+      "Hashes": "Hashes",
+      "Repairing": "Repairing",
+      "Anti corrosion": "Anti corrosion",
+      "Buffer": "Buffer",
+      "Command": "Command"
+    },
+    "PROCESSOR_SOURCE": "Processors",
+    "ALERT": {
+      "OUT_OF_CONTROL_HEADER": "Processor out of control.",
+      "OUT_OF_CONTROL_MESSAGE": "You've tried to select a processor which is not under your control, increase processor storage limit (SKILLS > PROCESSORS category) or install available processors first."
+    },
+    "BUTTONS": {
+      "ALL_ITEMS": "All items",
+      "ADD": "Add"
+    }
+  },
+  "ProcessorViewComponent": {
+    "HEADER": {
+      "DEFAULT_TITLE": "Processor slot",
+      "ROW": "row:",
+      "COLUMN": "column:"
+    },
+    "ALERT_MESSAGES": {
+      "HELP_ICONS_HEADER": "Help icons",
+      "HELP_ICONS_MESSAGE": "<h2><b>You can read additional information by clicking on info icon </b><img class=\"resource-img\" src=\"{{infoIconUrl}}\"><br></h2>",
+      "DEPLETION_HEADER": "Depletion",
+      "DEPLETION_MESSAGE": "<h2>Depletion = Processor LVL * 3 + 3 (per one working cycle 10 sec)</h2><br><h2>*Some skills and processor abilities may influence depletion.</h2>",
+      "DURABILITY_HEADER": "Durability",
+      "DURABILITY_MESSAGE": "<h2>Processors depleting during operation and if the processor's durability becomes 0 - the processor will be destroyed.<br>Processors can be repaired using repair processors on circuit board or hashes in processor storage.</h2><h2>Processor Max Durability = Processor LVL * 200 + 1000</h2><br><h2>*Some skills and processor abilities may influence Max Durability.</h2>",
+      "WORKING_CYCLE_HEADER": "Working cycle",
+      "WORKING_CYCLE_MESSAGE": "<h2>Processor mining resources every <b>10 seconds (1 cycle)</b>.<br>Total work of this processor {totalTime} seconds ({cycles} cycles).<br><b>*Some processor abilities may influence move cost.</b></h2>",
+      "MOVE_COST_HEADER": "Move cost",
+      "MOVE_COST_MESSAGE": "<h2>Current processor move cost <b>{{price}} <img class=\"resource-img\" src=\"{{manipulatorUrl}}\"> (Manipulator)</b>.<br><br>Processor move cost = Processor LVL*10 + 10<br><br><b>*Some skills and processor abilities may influence move cost.</b></h2>",
+      "EXTRACTION_COST_HEADER": "Extraction cost",
+      "EXTRACTION_COST_MESSAGE": "<h2>Current processor extraction cost <b>{{price}} <img class=\"resource-img\" src=\"{{extractorUrl}}\"> (Extractor)</b>.<br><br>Processor extraction cost = Processor LVL*10 + 10<br><br><b>*Some skills and processor abilities may influence extraction cost.</b></h2>",
+      "POSITIVE_ABILITIES_HEADER": "Positive abilities",
+      "POSITIVE_ABILITIES_MESSAGE": "<h5>Processor will gain 1 positive ability each level.</h5><br><h2>There are <b>Common, Intelligent, High-tech, Stellar</b> possible abilities.</h2>",
+      "NEGATIVE_ABILITIES_HEADER": "Negative abilities",
+      "NEGATIVE_ABILITIES_MESSAGE": "<h2><b>Processor will gain 1 negative ability on LVL 1, 3, 5.</b></h2>"
+    },
+    "BUTTONS": {
+      "INSTALL": "Install",
+      "DESTROY": "Destroy",
+      "REPAIR": "Repair",
+      "EXTRACT": "Extract",
+      "UPGRADE": "Upgrade LVL",
+      "CHANGE": "Change ",
+      "EMPTY_SLOT": "Empty slot:"
+    },
+    "LABELS": {
+      "BEING_WORKING": "Processor being working right now and can't be extracted.",
+      "MOVE_COST": "Move cost:",
+      "EXTRACTION_COST": "Extraction cost:",
+      "DURABILITY": "Durability:",
+      "DEPLETION_PER_CYCLE": "Depletion per cycle:",
+      "LVL": "LVL:",
+      "CYCLE_BASE": "cycle base:",
+      "CURRENT_PRODUCING": "Current producing per cycle(10 sec):",
+      "HASHES": "Hashes",
+      "EMPTY_SLOT_DESCRIPTION": "you can install here your processors from your processor storage.",
+      "ABILITIES": "Abilities:",
+      "POSITIVE": "Positive:",
+      "NEGATIVE": "Negative:",
+      "WEATHER": "Weather:",
+      "SKILLS": "Skills:",
+      "MANIPULATORS": "Manipulators",
+      "EXTRACTORS": "Extractors",
+      "EXTRACT_MESSAGE": "You need extract processor to processors storage so it can be upgraded or repaired (using hashes)."
+  
+    },
+    "DESCRIPTIONS": {
+      "DEUTERIUM": "Deuterium processor produces deuterium and consumes hashes.",
+      "ENERGY": "Energy processor produces energy and consumes hashes.",
+      "NANITE": "Nanite liquid processor produces nanite liquid and consumes deuterium and hashes.",
+      "METAL": "Metal processor produces metal and consumes deuterium and hashes.",
+      "TECHNETIUM": "Technetium processor produces technetium and consumes nanite liquid and metal."
+    }
+  },
+  "ProducingQueueComponent": {
+    "HEADER": {
+      "SUBSYSTEM": "Producing subsystem"
+    },
+    "BUTTONS": {
+      "CREATE": "Create"
+    },
+    "LABELS": {
+      "TOTAL_TIME": "Total time:"
+    },
+    "TABLE": {
+      "DESCRIPTION": "Description",
+      "TIME": "Time"
+    }
+  },
+  "SkillsLearningComponent": {
+    "HEADER": {
+      "TITLE": "Skills center"
+    },
+    "BUTTONS": {
+      "ADD_SKILL": "Add skill"
+    },
+    "LABELS": {
+      "LEARNING_SKILLS": "Learning skills:"
+    },
+    "TABLE": {
+      "DESCRIPTION": "Description",
+      "TIME": "Time"
+    }
+  },
+  "SkillsListComponent": {
+    "HEADER": {
+      "ALL_SKILLS": "All skills"
+    },
+    "BUTTONS": {
+      "BACK": "Back",
+      "ADD_TO_QUEUE": "Add to queue"
+    },
+    "LABELS": {
+      "SKILLS": "skills",
+      "LEVEL": "LVL",
+      "COST": "Cost:",
+      "LEARNING_TIME": "Learning time:"
+    },
+    "MESSAGES": {
+      "LEARNING_SKILL_LIST_FULL": "Learning skill list is full ",
+      "SKILL_COMPLETELY_LEARNED": "Skill is completely learned.",
+      "SKILL_CURRENTLY_LEARNED": "Skill is currently being learned."
+    },
+    "TECHNOLOGY_RANK": "Technology rank:"
+  },
+  "ManageStates": {
+    "QUEST_1_HEADER": "Learning [1/6]",
+    "QUEST_1_HTML": "<h2>Hashes is the most common resource needed for all other resources.</h2><br><h3>Let's compute some hashes!</h3><h3>Get 1000<img class=\"resource-img\" src=\"{{hashesImage}}\">(hashes) quickly click on hashes</h3><br><img src=\"{{computingUnitSample}}\">",
+    "QUEST_2_HEADER": "Learning [2/6]",
+    "QUEST_2_HTML": "<h2><b>Let's create your first processor</b><br>1) Open processor storage.<br>2) Add Deuterium processor.<br>3) Install processor to the first slot.</h2>",
+    "QUEST_3_HEADER": "Great job!",
+    "QUEST_3_HTML": "<h2>Let's check Energy processor:<br>1) Click on Energy processor (in the middle) to view more information.</h2>",
+    "QUEST_4_HEADER": "Learning [3/6]",
+    "QUEST_4_HTML": "<h2><b>Processor moving</b><br><br>To avoid destroying your Deuterium processor, move your created deuterium processor:<br>1) Click on move processor icon.<br>2) Select Deuterium processor.<br>3) Move Deuterium processor to right slot</h2>",
+    "QUEST_5_HEADER": "Learning [4/6]",
+    "QUEST_5_HTML": "<h2><b>Great job, get your reward 10 <span class=\"gracium-currency\">G</span> (Gracium)</b><br><br><b>Let's learn your first skill</b><br>1) Swipe left to Skills center<br>2) Press \"Add skill\".<br>3) Select \"Resource extraction\" category.<br>4) Add Deuterium productivity skill to queue.</h2>",
+    "QUEST_6_HEADER": "Learning [5/6]",
+    "QUEST_6_HTML": "<h2><b>Let's craft your first items!</b><br>1) Swipe left to producing subsystem.<br>2) Press \"Create\".<br>3) Select Gracium and create 10 items</h2>",
+    "QUEST_7_HEADER": "Learning [6/6]",
+    "QUEST_7_HTML": "<h2><b>Unlock new row on the circuit board.</b><br><br>1) Swipe to circuit board<br>2) Unlock new circuit board row.</h2>",
+    "QUEST_8_HEADER": "Proof of terrahedron work",
+    "QUEST_8_HTML": "<h2>Learning is finished!<br>Create all processor types: Energy, Nanite Liquid, Metal, Technetium.<br><br><b>To finish Phase 1 and start networking collaboration with other terrahedrons - produce Gracium and unlock all circuit board rows.</b></h2>",
+    "PLAYING_HEADER": "Proof of terrahedron work",
+    "PLAYING_HTML": "<h2>Learning is finished!<br>Create all processor types: Energy, Nanite Liquid, Metal, Technetium.<br><br><b>To finish Phase 1 and start networking collaboration with other terrahedrons - produce Gracium and unlock all circuit board rows.</b></h2>"
+  },
+  "TourFunctions": {
+    "INFO_ABOUT_ABILITIES": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h6>You'll be able to see what your processor producing when works.<br><h1 class=\"tooltip-button-ok show-proc-ability-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></h6></div></div>",
+    "INFO_ABOUT_HEATING": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h3><b>Your deuterium processor in dangerous heating slot, <span class=\"gf-negative-color\">when overheating timer finishes, processor on this position will be destroyed.</span><br>So let's move processor.</b><br></h3><h1 class=\"tooltip-button-ok show-proc-ability-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "WEATHER_TIP": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h6><b>Weather outside terrahedron changes every few days.</b></h6><h6>Current weather outside terrahedron: <b>Storm.</b>, Deuterium processors will gain 50% more resources, while Nanite liquid and Metal processor 25% less.</h6><br><br><h1 class=\"tooltip-button-ok show-quest-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "QUEST_POPUP": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h3><b>You can always click on quest icon <img style=\"width: 2rem; vertical-align: middle;\" class=\"tooltip-image\" src=\"{{tasksIconUrl}}\"> to see what you need to do.</b></h3><br><h1 class=\"tooltip-button-ok show-quest-tooltip cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "MAIN_BOARD_DESCRIBE_3": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><div class=\"image-wrap\"><img class=\"tooltip-image\" src=\"{{headMovingSampleUrl}}\"></div><div><h4><b>Reading head moves form left to right and row by row working 10 seconds on each slot mining resources.</b><br><br></h4></div><div><h1 class=\"tooltip-button-ok show-board-tooltip-3 cyber-tile-small bg-blue fg-white\">OK</h1></div></div></div>",
+    "MAIN_BOARD_DESCRIBE_2": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><h6>Empty slots have also work 10 seconds and gain 10 Hashes per cycle and will be increased when you open new rows. <b>You can install your processors into empty slots.</b></h6><br><h1 class=\"tooltip-button-ok show-board-tooltip-3 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "MAIN_BOARD_DESCRIBE_1": "<div class=\"tooltip-wrapper tooltip-top\"><div class=\"tooltip-text fg-white\"><div class=\"image-wrap\"><img class=\"tooltip-image\" src=\"{{procSampleUrl}}\"></div><h6><b>Resources are mined using processors on circuit board.</b><br><br>1. Durability of processor.<br>2. Each processor works 10 seconds (when reading head over this processor).<br>3. What processor consumes and gains.</h6><br><h1 class=\"tooltip-button-ok show-board-tooltip-1 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "SHOW_RESOURCE_TIP_2": "<div class=\"tooltip-wrapper\"><div class=\"tooltip-text fg-white\"><div class=\"image-wrap\"><img class=\"tooltip-image\" src=\"{{resourceSampleUrl}}\"></div><h4><b>1. The amount of resource you have.</b><br><b>2. Maximum capability for resource storage.</b><br><br><br><br><br></h4><h1 class=\"tooltip-button-ok show-resource-tooltip-1 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>",
+    "SHOW_RESOURCE_TIP_1": "<div class=\"tooltip-wrapper\"><div class=\"tooltip-text fg-white\"><h2>There are 6 main types of resources: Hashes, Deuterium, Energy, Nanite liquid, Metal, Technetium, which can be mined using processors on the central board.</h2><h1 class=\"tooltip-button-ok show-resource-tooltip-1 cyber-tile-small bg-blue fg-white\">OK</h1></div></div>"
+  },
+  "InactiveHandles": {
+    "ALERT_HEADER": "Inactive",
+    "ALERT_MESSAGE": "<h2>You've been inactive for more than 2 minutes, press OKAY to continue</h2>"
+  },
+  "AlertConfirmService": {
+    "OKAY": "Okay",
+    "CANCEL": "Cancel",
+    "CONFIRM": "Confirm"
+  },
+   "GameProcessService": {
+    "UNLOCK_NEW_ROW_HEADER": "Unlock row",
+    "UNLOCK_NEW_ROW_DESCRIPTION": "Unlock new row for ",
+    "TOAST_SKILL_UPGRADED": "Skill {{skillName}} upgraded to LVL{{newLvl}}",
+    "TOAST_NOT_ENOUGH_RESOURCES_PROCESSOR": "Not enough resources for processor on position row: {{row}} col: {{col}}",
+    "TOAST_PRODUCING_FINISHED": "Producing {{item}} x {{count}} finished",
+    "CREATE_PROCESSOR_NOT_ENOUGH_RESOURCES_HEADER": "Not enough resources.",
+    "CREATE_PROCESSOR_NOT_ENOUGH_RESOURCES_MESSAGE": "<h6>You have: <span class=\"gf-negative-color\">{{available}}</span><img class=\"resource-img\" src=\"{{resourceImage}}\"> <br/> Need: {{need}}<img class=\"resource-img\" src=\"{{resourceImage}}\"></h6>"
+  },
+  "SKILLS": {
+    "CIRCUIT_BOARD": {
+      "OVERHEATING_TIMER_DEFERMENT": {
+        "NAME": "Overheating timer deferment",
+        "DESCRIPTION": "Increases Overheating timer value by {{baseTime}} per each skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    },
+    "COMPUTING_UNIT": {
+      "INCREASE_RESETING_TIMER": {
+        "NAME": "Increase reseting timer value",
+        "DESCRIPTION": "Increases timer work for computing unit by {{timerIncrease}} seconds per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}} seconds</span>."
+      },
+      "INCREASE_INITIAL_POWER": {
+        "NAME": "Increase inital computing unit power",
+        "DESCRIPTION": "Increases initial value for computing power by {{resetingValueIncrease}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    },
+    "EXTRACTION": {
+      "DEUTERIUM_PRODUCTIVITY": {
+        "NAME": "Deuterium productivity",
+        "DESCRIPTION": "Deuterium processors extract 10% more per skill level. Current value <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "ENERGY_PRODUCTIVITY": {
+        "NAME": "Energy productivity",
+        "DESCRIPTION": "Energy processors extract 10% more per skill level. Current value <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "HASHES_PRODUCTIVITY": {
+        "NAME": "Hashes productivity",
+        "DESCRIPTION": "Hashes processors extract 10% more per skill level. Current value <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "NANITE_LIQUID_PRODUCTIVITY": {
+        "NAME": "Nanite liquid productivity",
+        "DESCRIPTION": "Nanite liquid processors extract 10% more per skill level. Current value <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "METAL_PRODUCTIVITY": {
+        "NAME": "Metal productivity",
+        "DESCRIPTION": "Metal processors extract 10% more per skill level. Current value <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      },
+      "TECHNETIUM_PRODUCTIVITY": {
+        "NAME": "Technetium productivity",
+        "DESCRIPTION": "Technetium processors extract 10% more per skill level. Current value <span class=\"fg-cyan\">+{{currentPercent}}%</span>."
+      }
+    },
+    "PROCESSORS": {
+      "DEUTERIUM_STORAGE_LIMIT": {
+        "NAME": "Deuterium processor storage limit",
+        "DESCRIPTION": "Increases Deuterium processors storage by {{increasePerLevel}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "ENERGY_STORAGE_LIMIT": {
+        "NAME": "Energy processor storage limit",
+        "DESCRIPTION": "Increases Energy processors storage by {{increasePerLevel}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "NANITE_STORAGE_LIMIT": {
+        "NAME": "Nanite liquid processor storage limit",
+        "DESCRIPTION": "Increases Nanite liquid processors storage by {{increasePerLevel}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "METAL_STORAGE_LIMIT": {
+        "NAME": "Metal processor storage limit",
+        "DESCRIPTION": "Increases Metal processors storage by {{increasePerLevel}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "TECHNETIUM_STORAGE_LIMIT": {
+        "NAME": "Technetium processor storage limit",
+        "DESCRIPTION": "Increases Technetium processors storage by {{increasePerLevel}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    },
+    "PRODUCING": {
+      "QUEUE_TIME": {
+        "NAME": "Producing queue time",
+        "DESCRIPTION": "Increases Producing queue total time by {{increaseSeconds}} seconds. Current value <span class=\"fg-cyan\">+{{currentIncrease}} seconds</span>."
+      },
+      "EXTRACTOR_TIME_DECREASE": {
+        "NAME": "Extractor time decrease",
+        "DESCRIPTION": "Reduce Extractor producing time by {{decreaseSeconds}} seconds per each skill level. Current value <span class=\"fg-cyan\">-{{currentDecrease}} seconds</span>."
+      },
+      "MANIPULATOR_TIME_DECREASE": {
+        "NAME": "Manipulator time decrease",
+        "DESCRIPTION": "Reduce Manipulator producing time by {{decreaseSeconds}} seconds per each skill level. Current value <span class=\"fg-cyan\">-{{currentDecrease}} seconds</span>."
+      },
+      "GRACIUM_TIME_DECREASE": {
+        "NAME": "Gracium time decrease",
+        "DESCRIPTION": "Reduce Gracium producing time by {{decreaseSeconds}} seconds per each skill level. Current value <span class=\"fg-cyan\">-{{currentDecrease}} seconds</span>."
+      },
+      "REPAIR_FLUID_TIME_DECREASE": {
+        "NAME": "Manipulator time decrease",
+        "DESCRIPTION": "Reduce Repair fluid producing time by {{decreaseSeconds}} seconds per each skill level. Current value <span class=\"fg-cyan\">-{{currentDecrease}} seconds</span>."
+      }
+    },
+    "SKILLS": {
+      "SIMMALTENIOUS_LEARNING": {
+        "NAME": "Simultaneous learning",
+        "DESCRIPTION": "Increases skills learning simultaneously by 1 per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "LEARNING_TIME_OPTIMIZATION": {
+        "NAME": "Learning time optimization",
+        "DESCRIPTION": "Decreases skills learning time by 5% per skill level. Current value <span class=\"fg-cyan\">-{{currentDecrease}}%</span>."
+      }
+    },
+    "STORAGE": {
+      "HASHES_STORAGE": {
+        "NAME": "Hashes storage",
+        "DESCRIPTION": "Increases Hashes storage by 10% per each skill level ({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "DEUTERIUM_STORAGE": {
+        "NAME": "Deuterium storage",
+        "DESCRIPTION": "Increases Deuterium storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "ENERGY_STORAGE": {
+        "NAME": "Energy storage",
+        "DESCRIPTION": "Increases Energy storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "NANITE_LIQUID_STORAGE": {
+        "NAME": "Nanite liquid storage",
+        "DESCRIPTION": "Increases Nanite liquid storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "METAL_STORAGE": {
+        "NAME": "Metal storage",
+        "DESCRIPTION": "Increases Metal storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "TECHNETIUM_STORAGE": {
+        "NAME": "Technetium storage",
+        "DESCRIPTION": "Increases Technetium storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+      },
+      "MANIPULATORS_STORAGE": {
+        "NAME": "Manipulators storage",
+        "DESCRIPTION": "Increases Manipulators storage by {{updateValue}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      },
+      "EXTRACTOR_STORAGE": {
+        "NAME": "Extractor storage",
+        "DESCRIPTION": "Increases Extractor storage by {{updateValue}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
+      }
+    }
+  }
+  
+}
