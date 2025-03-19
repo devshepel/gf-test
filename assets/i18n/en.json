@@ -299,6 +299,7 @@
     "CONFIRM": "Confirm"
   },
    "GameProcessService": {
+    "TOAST_PROCESSOR_DESTROYED": "{{processorType}} processor  destroyed (row: {{row}} column: {{col}}).",
     "UNLOCK_NEW_ROW_HEADER": "Unlock row",
     "UNLOCK_NEW_ROW_DESCRIPTION": "Unlock new row for ",
     "TOAST_SKILL_UPGRADED": "Skill {{skillName}} upgraded to LVL{{newLvl}}",
@@ -407,27 +408,27 @@
     "STORAGE": {
       "HASHES_STORAGE": {
         "NAME": "Hashes storage",
-        "DESCRIPTION": "Increases Hashes storage by 10% per each skill level ({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Increases Hashes storage by 30% per each skill level ({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "DEUTERIUM_STORAGE": {
         "NAME": "Deuterium storage",
-        "DESCRIPTION": "Increases Deuterium storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Increases Deuterium storage by 30% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "ENERGY_STORAGE": {
         "NAME": "Energy storage",
-        "DESCRIPTION": "Increases Energy storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Increases Energy storage by 30% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "NANITE_LIQUID_STORAGE": {
         "NAME": "Nanite liquid storage",
-        "DESCRIPTION": "Increases Nanite liquid storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Increases Nanite liquid storage by 30% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "METAL_STORAGE": {
         "NAME": "Metal storage",
-        "DESCRIPTION": "Increases Metal storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Increases Metal storage by 30% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "TECHNETIUM_STORAGE": {
         "NAME": "Technetium storage",
-        "DESCRIPTION": "Increases Technetium storage by 10% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Increases Technetium storage by 30% per each skill level({{storageUpdateMultiplier}} ^ Skill level). Current value <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "MANIPULATORS_STORAGE": {
         "NAME": "Manipulators storage",
@@ -438,6 +439,39 @@
         "DESCRIPTION": "Increases Extractor storage by {{updateValue}} per skill level. Current value <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
       }
     }
+  },
+  "VulnerabilitiesComponent": {
+    "HEADER": {
+      "TITLE": "Vulnerabilities"
+    },
+    "SYSTEM_STATUS": {
+      "WARNINGS_DETECTED": "SYSTEM WARNINGS DETECTED",
+      "OPERATIONAL": "ALL SYSTEMS OPERATIONAL"
+    },
+    "COMMON": {
+      "AFFECTED_PROCESSORS": "AFFECTED PROCESSORS",
+      "POSITION": "POSITION",
+      "ROW": "ROW",
+      "COL": "COL"
+    },
+    "HEATING": {
+      "TITLE": "OVERHEATING CRITICAL",
+      "DESTRUCTION_IN": "DESTRUCTION IN",
+      "PROGRESS": "OVERHEATING PROGRESS",
+      "DESCRIPTION": "When heating timer reaches 0, processor will be <span class=\"danger-text\">DESTROYED</span>. Move processor to another slot or extract it to storage."
+    },
+    "DURABILITY": {
+      "TITLE": "CRITICAL DAMAGE DETECTED",
+      "DESCRIPTION": "When durability reaches 0, processor will be <span class=\"danger-text\">DESTROYED</span>. Extract the processor and repair it using hashes or place a repair processor nearby."
+    },
+    "RESOURCE": {
+      "TITLE": "STORAGE CAPACITY ALERT",
+      "AFFECTED_RESOURCES": "AFFECTED RESOURCES",
+      "DESCRIPTION": "When resource reaches maximum capacity, it will <span class=\"danger-text\">RESET TO ZERO</span>. Use resources before they reach capacity or upgrade storage in Skills center."
+    },
+    "SAFE": {
+      "TITLE": "ALL SYSTEMS OPERATIONAL",
+      "MESSAGE": "No vulnerabilities detected at this time."
+    }
   }
-  
 }

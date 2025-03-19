@@ -298,6 +298,7 @@
     "CONFIRM": "Підтвердити"
   },
   "GameProcessService": {
+    "TOAST_PROCESSOR_DESTROYED": "{{processorType}} процесор знищено (ряд: {{row}} колонка: {{col}})",
     "UNLOCK_NEW_ROW_HEADER": "Відкрити новий ряд",
     "UNLOCK_NEW_ROW_DESCRIPTION": "Відкрити новий ряд за ",
     "TOAST_SKILL_UPGRADED": "Навичку {{skillName}} підвищено до рівня {{newLvl}}",
@@ -406,27 +407,27 @@
     "STORAGE": {
       "HASHES_STORAGE": {
         "NAME": "Сховище хешів",
-        "DESCRIPTION": "Збільшує сховище хешів на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Збільшує сховище хешів на 30% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "DEUTERIUM_STORAGE": {
         "NAME": "Сховище для дейтерію",
-        "DESCRIPTION": "Збільшує сховище для дейтерію на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Збільшує сховище для дейтерію на 30% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "ENERGY_STORAGE": {
         "NAME": "Сховище для енергії",
-        "DESCRIPTION": "Збільшує сховище для енергії на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Збільшує сховище для енергії на 30% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "NANITE_LIQUID_STORAGE": {
         "NAME": "Сховище для нанітної рідини",
-        "DESCRIPTION": "Збільшує сховище для нанітної рідини на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Збільшує сховище для нанітної рідини на 30% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "METAL_STORAGE": {
         "NAME": "Сховище для металу",
-        "DESCRIPTION": "Збільшує сховище для металу на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Збільшує сховище для металу на 30% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "TECHNETIUM_STORAGE": {
         "NAME": "Сховище для технецію",
-        "DESCRIPTION": "Збільшує сховище для технецію на 10% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
+        "DESCRIPTION": "Збільшує сховище для технецію на 30% за кожен рівень навички ({{storageUpdateMultiplier}} ^ Рівень навички). Поточне значення <span class=\"fg-cyan\">+{{currentIncreasePercent}}%</span>."
       },
       "MANIPULATORS_STORAGE": {
         "NAME": "Сховище для маніпуляторів",
@@ -436,6 +437,40 @@
         "NAME": "Сховище для екстракторів",
         "DESCRIPTION": "Збільшує сховище для екстракторів на {{updateValue}} за кожен рівень навички. Поточне значення <span class=\"fg-cyan\">+{{currentIncrease}}</span>."
       }
+    }
+  },
+  "VulnerabilitiesComponent": {
+    "HEADER": {
+      "TITLE": "Вразливості"
+    },
+    "SYSTEM_STATUS": {
+      "WARNINGS_DETECTED": "ВИЯВЛЕНІ СИСТЕМНІ ПОПЕРЕДЖЕННЯ",
+      "OPERATIONAL": "ВСІ СИСТЕМИ ПРАЦЮЮТЬ"
+    },
+    "COMMON": {
+      "AFFECTED_PROCESSORS": "ВРАЗЛИВІ ПРОЦЕСОРИ",
+      "POSITION": "ПОЗИЦІЯ",
+      "ROW": "РЯД",
+      "COL": "СТОВП"
+    },
+    "HEATING": {
+      "TITLE": "КРИТИЧНИЙ ПЕРЕГРІВ",
+      "DESTRUCTION_IN": "ЗНИЩЕННЯ ЧЕРЕЗ",
+      "PROGRESS": "ПРОГРЕС ПЕРЕГРІВУ",
+      "DESCRIPTION": "Коли таймер перегріву досягне 0, процесор буде <span class=\"danger-text\">ЗНИЩЕНО</span>. Перемістіть процесор в інший слот або витягніть його в сховище."
+    },
+    "DURABILITY": {
+      "TITLE": "ВИЯВЛЕНІ КРИТИЧНІ ПОШКОДЖЕННЯ",
+      "DESCRIPTION": "Коли міцність досягне 0, процесор буде <span class=\"danger-text\">ЗНИЩЕНО</span>. Витягніть процесор та відремонтуйте його, використовуючи хеші, або розмістіть поруч ремонтний процесор."
+    },
+    "RESOURCE": {
+      "TITLE": "ПОПЕРЕДЖЕННЯ ПРО ЄМНІСТЬ СХОВИЩА",
+      "AFFECTED_RESOURCES": "ВРАЗЛИВІ РЕСУРСИ",
+      "DESCRIPTION": "Коли ресурс досягне максимальної ємності, він <span class=\"danger-text\">СКИНЕТЬСЯ ДО НУЛЯ</span>. Використовуйте ресурси до досягнення максимальної ємності або покращіть сховище в Центрі навичок."
+    },
+    "SAFE": {
+      "TITLE": "ВСІ СИСТЕМИ ПРАЦЮЮТЬ",
+      "MESSAGE": "На даний момент вразливостей не виявлено."
     }
   }
 }
